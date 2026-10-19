@@ -1,0 +1,60 @@
+name: Discover netdisk share candidates
+on:
+  workflow_dispatch:
+    inputs:
+      keyword:
+        description: 'Search one FAB keyword (blank uses keyword library)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '47 1 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: fab-discovery
+  cancel-in-progress: false
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Start self-hosted PanSou backend (on this runner)
+        run: |
+          docker run -d --rm --name fab-pansou -p 127.0.0.1:8888:8888 ghcr.io/fish2018/pansou:latest
+      - name: Wait for backend
+        run: |
+          python - <<'PY'
+          import time,json,urllib.request
+          for _ in range(50):
+              try:
+                  info=json.load(urllib.request.urlopen('http://127.0.0.1:8888/api/health',timeout=3))
+                  if info.get('status')=='ok':break
+              except Exception:time.sleep(2)
+          else:raise RuntimeError('PanSou backend unavailable')
+          PY
+      - name: Search open-share metadata
+        env:
+          KEYWORD: ${{ inputs.keyword }}
+        run: |
+          if [ -n "$KEYWORD" ]; then
+            python cloud/pansou_bridge.py --query "$KEYWORD" --limit 1
+          else
+            python cloud/pansou_bridge.py --limit 19
+          fi
+      - name: Save index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/index.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: discover public netdisk candidates"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Backend logs on failure
+        if: failure()
+        run: docker logs --tail 80 fab-pansou || true
