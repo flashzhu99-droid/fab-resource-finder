@@ -78,15 +78,24 @@ def main():
  p.add_argument('--query',default='')
  p.add_argument('--index',default=str(ROOT/'docs/index.json'))
  p.add_argument('--keywords',default=str(ROOT/'config/fab_search_keywords.json'))
- p.add_argument('--source',choices=('tg','plugin','all'),default='tg')
+ p.add_argument('--source',choices=('tg','plugin','all'),default='all')
  p.add_argument('--limit',type=int,default=20)
+ p.add_argument('--daily-batch',action='store_true',help='Rotate small query batches on schedule')
  a=p.parse_args()
  base='http://127.0.0.1:8888'
  health=api_json(base+'/api/health')
  if health.get('status')!='ok':raise RuntimeError('PanSou backend unhealthy')
  cfg=json.loads(Path(a.keywords).read_text(encoding='utf-8'))
  queries=[a.query] if a.query else cfg.get('queries',[])
- queries=[q.strip()[:70] for q in queries[:max(1,min(a.limit,30))] if q.strip()]
+ if a.daily_batch and not a.query and queries:
+  from datetime import datetime,timezone
+  batch_size=max(1,min(a.limit,8))
+  # Revisit all keywords in a rolling rotation rather than timing out on every run.
+  offset=(datetime.now(timezone.utc).date().toordinal()*batch_size)%len(queries)
+  queries=(queries+queries)[offset:offset+batch_size]
+ else:
+  queries=queries[:max(1,min(a.limit,30))]
+ queries=[str(q).strip()[:70] for q in queries if str(q).strip()]
  original=json.loads(Path(a.index).read_text(encoding='utf-8')) if Path(a.index).exists() else {'records':[]}
  index={}
  for r in original.get('records',[]):
@@ -111,6 +120,8 @@ def main():
    print('ERROR',errors[-1],file=sys.stderr,flush=True)
   time.sleep(1)
  if not answered:raise RuntimeError('All searches failed: '+str(errors[:2]))
+ if not upstream_links and not upstream_hits:
+  print('No upstream matches: try --source all, shorter queries or other approved sources',flush=True)
  from datetime import datetime,timezone
  now=datetime.now(timezone.utc).replace(microsecond=0).isoformat()
  doc={**original,'schema_version':1,'generated_at':now,
