@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-19T13:28:30+00:00",
+  "generated_at": "2026-10-19T14:37:59+00:00",
   "collector": "FAB Resource Finder V1.2 / PanSou bridge",
   "count": 9,
   "records": [
@@ -150,9 +150,13 @@
     }
   ],
   "discovery": {
-    "searched": 19,
-    "answered": 19,
+    "searched": 1,
+    "answered": 1,
+    "upstream_links": 0,
+    "upstream_hits": 0,
+    "qualified_candidates": 0,
     "new_candidates": 0,
+    "searches_without_share_groups": 0,
     "errors": [],
     "link_status": "unverified",
     "source": "tg"
