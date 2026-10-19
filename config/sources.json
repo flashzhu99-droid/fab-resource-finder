@@ -1,0 +1,4 @@
+[
+  {"name":"经授权公开资料页（示例：默认不启用）","type":"page","url":"https://example.org/public/","enabled":false,"permission_confirmed":false},
+  {"name":"经授权RSS（示例：默认不启用）","type":"rss","url":"https://example.org/rss.xml","enabled":false,"permission_confirmed":false}
+]
