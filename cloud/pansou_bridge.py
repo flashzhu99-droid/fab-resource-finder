@@ -27,20 +27,31 @@ def api_json(url,payload=None):
   if len(b)>5000000:raise ValueError('response too large')
   return json.loads(b)
 def unpack_response(payload):
- """PanSou res=merge may return raw provider groups, or nested merged_by_type."""
+ """Normalize PanSou grouped responses, including empty total-only responses."""
  if not isinstance(payload,dict):raise ValueError('PanSou response is not a JSON object')
  if 'error' in payload or ('code' in payload and payload['code'] not in (None,0,200)):
   raise RuntimeError('PanSou upstream error: '+str(payload.get('message') or payload.get('error'))[:150])
  obj=payload.get('data',payload)
  if not isinstance(obj,dict):raise ValueError('PanSou response data is not an object')
- if isinstance(obj.get('merged_by_type'),dict):return {'merged_by_type':obj['merged_by_type']}
+ if isinstance(obj.get('merged_by_type'),dict):
+  return {'merged_by_type':obj['merged_by_type'],'total':obj.get('total')}
  if isinstance(obj.get('data'),dict) and isinstance(obj['data'].get('merged_by_type'),dict):
-  return {'merged_by_type':obj['data']['merged_by_type']}
+  nested=obj['data']
+  return {'merged_by_type':nested['merged_by_type'],'total':nested.get('total')}
  providers=set(PLATFORMS)|{'others','guangya','pikpak'}
- if obj and any(k in providers for k in obj):
-  return {'merged_by_type':{k:v for k,v in obj.items() if k in providers and isinstance(v,list)}}
- if obj=={}:return {'merged_by_type':{}}
+ if any(k in providers for k in obj):
+  return {'merged_by_type':{k:v for k,v in obj.items() if k in providers and isinstance(v,list)},'total':obj.get('total')}
+ if 'total' in obj:
+  total=obj['total']
+  if isinstance(total,bool) or not isinstance(total,int) or total<0:
+   raise ValueError('PanSou total should be a nonnegative integer')
+  # No merged groups can be a legitimate empty response (Go omitempty).
+  # Preserve total for diagnostics if messages exist but share groups are absent.
+  return {'merged_by_type':{},'total':total}
+ if obj=={}:return {'merged_by_type':{},'total':0}
  raise ValueError('Unexpected PanSou schema; top-level keys='+','.join(list(obj)[:12]))
+def upstream_total(payload):
+ return unpack_response(payload).get('total')
 def count_upstream_links(payload):
  return sum(len(v) for v in unpack_response(payload)['merged_by_type'].values() if isinstance(v,list))
 def convert(data,keyword):
@@ -81,17 +92,20 @@ def main():
  for r in original.get('records',[]):
   normalized=normalize(r)
   if normalized:index[normalized['id']]={**normalized,**r}
- added=0;errors=[];answered=0;upstream_links=0;matching_links=0
+ added=0;errors=[];answered=0;upstream_links=0;matching_links=0;upstream_hits=0;empty_link_groups=0
  for q in queries:
   try:
    data=api_json(base+'/api/search',{'kw':q,'res':'merge','src':a.source,'cloud_types':list(PLATFORMS)})
    raw_count=count_upstream_links(data)
+   total=upstream_total(data)
    candidates=convert(data,q);answered+=1
    upstream_links+=raw_count;matching_links+=len(candidates)
+   upstream_hits+=total if isinstance(total,int) else raw_count
+   if isinstance(total,int) and total>0 and raw_count==0:empty_link_groups+=1
    for candidate in candidates:
     if candidate['id'] not in index:
      index[candidate['id']]=candidate;added+=1
-   print(f'{q}: upstream={raw_count}, qualified={len(candidates)}, new={added}',flush=True)
+   print(f'{q}: upstream_total={total}, upstream_links={raw_count}, qualified={len(candidates)}, new_total={added}',flush=True)
   except Exception as e:
    errors.append(f'{q}: {type(e).__name__}: {e}')
    print('ERROR',errors[-1],file=sys.stderr,flush=True)
@@ -103,7 +117,8 @@ def main():
       'collector':'FAB Resource Finder V1.2 / PanSou bridge',
       'count':len(index),'records':list(index.values()),
       'discovery':{'searched':len(queries),'answered':answered,'upstream_links':upstream_links,
-                   'qualified_candidates':matching_links,'new_candidates':added,
+                   'upstream_hits':upstream_hits,'qualified_candidates':matching_links,'new_candidates':added,
+                   'searches_without_share_groups':empty_link_groups,
                    'errors':errors[:10],'link_status':'unverified','source':a.source}}
  Path(a.index).write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print('New candidates:',added,'total:',len(index))
