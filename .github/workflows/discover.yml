@@ -43,9 +43,9 @@ jobs:
           KEYWORD: ${{ inputs.keyword }}
         run: |
           if [ -n "$KEYWORD" ]; then
-            python cloud/pansou_bridge.py --query "$KEYWORD" --limit 1
+            python cloud/pansou_bridge.py --query "$KEYWORD" --source all --limit 1
           else
-            python cloud/pansou_bridge.py --limit 19
+            python cloud/pansou_bridge.py --source all --limit 6 --daily-batch
           fi
       - name: Save index
         run: |
