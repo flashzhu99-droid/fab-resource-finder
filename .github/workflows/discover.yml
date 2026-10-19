@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Validate PanSou response adapter
+        run: python -m unittest discover -s tests -p 'test_pansou_response.py' -v
       - name: Start self-hosted PanSou backend (on this runner)
         run: |
           docker run -d --rm --name fab-pansou -p 127.0.0.1:8888:8888 ghcr.io/fish2018/pansou:latest
