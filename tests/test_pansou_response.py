@@ -5,6 +5,10 @@ class TestPanSouResponse(unittest.TestCase):
   payload={"code":0,"data":{"merged_by_type":{"baidu":[{"url":"https://pan.baidu.com/s/1abcdefgh","work_title":"超纯水系统维护手册"}]}}}
   self.assertEqual(count_upstream_links(payload),1)
   self.assertEqual(len(convert(payload,"超纯水")),1)
+ def test_direct_provider_map(self):
+  sample={"baidu":[{"url":"https://pan.baidu.com/s/1abcdefgh","work_title":"超纯水系统维护手册"}],"quark":[]}
+  self.assertEqual(count_upstream_links({"data":sample}),1)
+  self.assertEqual(len(convert({"data":sample},"超纯水")),1)
  def test_unwrapped(self):
   self.assertEqual(count_upstream_links({"merged_by_type":{"quark":[]}}),0)
  def test_unknown_schema(self):
