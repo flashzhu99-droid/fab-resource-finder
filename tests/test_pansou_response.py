@@ -11,6 +11,16 @@ class TestPanSouResponse(unittest.TestCase):
   self.assertEqual(len(convert({"data":sample},"超纯水")),1)
  def test_unwrapped(self):
   self.assertEqual(count_upstream_links({"merged_by_type":{"quark":[]}}),0)
+ def test_total_only_zero(self):
+  payload={"code":0,"data":{"total":0}}
+  self.assertEqual(count_upstream_links(payload),0)
+  self.assertEqual(convert(payload,"超纯水系统"),[])
+ def test_total_only_positive_is_diagnostic(self):
+  payload={"code":0,"data":{"total":7}}
+  self.assertEqual(count_upstream_links(payload),0)
+ def test_invalid_total(self):
+  with self.assertRaises(ValueError):
+   count_upstream_links({"data":{"total":-1}})
  def test_unknown_schema(self):
   with self.assertRaises(ValueError):convert({"code":0,"data":{"results":[]}},"超纯水")
  def test_unrelated(self):
