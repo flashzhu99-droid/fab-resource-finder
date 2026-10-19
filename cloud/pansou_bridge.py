@@ -27,14 +27,20 @@ def api_json(url,payload=None):
   if len(b)>5000000:raise ValueError('response too large')
   return json.loads(b)
 def unpack_response(payload):
- """Accept both API envelopes: {code:0,data:{...}} and unwrapped {...}."""
- if not isinstance(payload,dict):raise ValueError('PanSou API response is not a JSON object')
- if 'data' in payload:
-  if payload.get('code') not in (None,0,200):raise RuntimeError('PanSou API error: '+str(payload.get('message','unknown'))[:200])
-  payload=payload.get('data')
- if not isinstance(payload,dict) or not isinstance(payload.get('merged_by_type'),dict):
-  raise ValueError('PanSou response missing merged_by_type: upstream schema changed')
- return payload
+ """PanSou res=merge may return raw provider groups, or nested merged_by_type."""
+ if not isinstance(payload,dict):raise ValueError('PanSou response is not a JSON object')
+ if 'error' in payload or ('code' in payload and payload['code'] not in (None,0,200)):
+  raise RuntimeError('PanSou upstream error: '+str(payload.get('message') or payload.get('error'))[:150])
+ obj=payload.get('data',payload)
+ if not isinstance(obj,dict):raise ValueError('PanSou response data is not an object')
+ if isinstance(obj.get('merged_by_type'),dict):return {'merged_by_type':obj['merged_by_type']}
+ if isinstance(obj.get('data'),dict) and isinstance(obj['data'].get('merged_by_type'),dict):
+  return {'merged_by_type':obj['data']['merged_by_type']}
+ providers=set(PLATFORMS)|{'others','guangya','pikpak'}
+ if obj and any(k in providers for k in obj):
+  return {'merged_by_type':{k:v for k,v in obj.items() if k in providers and isinstance(v,list)}}
+ if obj=={}:return {'merged_by_type':{}}
+ raise ValueError('Unexpected PanSou schema; top-level keys='+','.join(list(obj)[:12]))
 def count_upstream_links(payload):
  return sum(len(v) for v in unpack_response(payload)['merged_by_type'].values() if isinstance(v,list))
 def convert(data,keyword):
