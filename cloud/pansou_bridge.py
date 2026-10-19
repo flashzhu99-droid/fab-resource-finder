@@ -26,9 +26,20 @@ def api_json(url,payload=None):
   b=f.read(5000001)
   if len(b)>5000000:raise ValueError('response too large')
   return json.loads(b)
+def unpack_response(payload):
+ """Accept both API envelopes: {code:0,data:{...}} and unwrapped {...}."""
+ if not isinstance(payload,dict):raise ValueError('PanSou API response is not a JSON object')
+ if 'data' in payload:
+  if payload.get('code') not in (None,0,200):raise RuntimeError('PanSou API error: '+str(payload.get('message','unknown'))[:200])
+  payload=payload.get('data')
+ if not isinstance(payload,dict) or not isinstance(payload.get('merged_by_type'),dict):
+  raise ValueError('PanSou response missing merged_by_type: upstream schema changed')
+ return payload
+def count_upstream_links(payload):
+ return sum(len(v) for v in unpack_response(payload)['merged_by_type'].values() if isinstance(v,list))
 def convert(data,keyword):
  result=[]
- for kind,links in (data.get('merged_by_type') or {}).items():
+ for kind,links in unpack_response(data)['merged_by_type'].items():
   if kind not in PLATFORMS or not isinstance(links,list):continue
   for x in links:
    if not isinstance(x,dict):continue
@@ -64,16 +75,20 @@ def main():
  for r in original.get('records',[]):
   normalized=normalize(r)
   if normalized:index[normalized['id']]={**normalized,**r}
- added=0;errors=[];answered=0
+ added=0;errors=[];answered=0;upstream_links=0;matching_links=0
  for q in queries:
   try:
    data=api_json(base+'/api/search',{'kw':q,'res':'merge','src':a.source,'cloud_types':list(PLATFORMS)})
+   raw_count=count_upstream_links(data)
    candidates=convert(data,q);answered+=1
+   upstream_links+=raw_count;matching_links+=len(candidates)
    for candidate in candidates:
     if candidate['id'] not in index:
      index[candidate['id']]=candidate;added+=1
-   print(q,':',len(candidates),'candidates')
-  except Exception as e:errors.append(f'{q}: {type(e).__name__}: {e}')
+   print(f'{q}: upstream={raw_count}, qualified={len(candidates)}, new={added}',flush=True)
+  except Exception as e:
+   errors.append(f'{q}: {type(e).__name__}: {e}')
+   print('ERROR',errors[-1],file=sys.stderr,flush=True)
   time.sleep(1)
  if not answered:raise RuntimeError('All searches failed: '+str(errors[:2]))
  from datetime import datetime,timezone
@@ -81,7 +96,8 @@ def main():
  doc={**original,'schema_version':1,'generated_at':now,
       'collector':'FAB Resource Finder V1.2 / PanSou bridge',
       'count':len(index),'records':list(index.values()),
-      'discovery':{'searched':len(queries),'answered':answered,'new_candidates':added,
+      'discovery':{'searched':len(queries),'answered':answered,'upstream_links':upstream_links,
+                   'qualified_candidates':matching_links,'new_candidates':added,
                    'errors':errors[:10],'link_status':'unverified','source':a.source}}
  Path(a.index).write_text(json.dumps(doc,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print('New candidates:',added,'total:',len(index))
