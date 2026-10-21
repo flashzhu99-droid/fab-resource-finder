@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T06:38:07+00:00",
-  "collector": "FAB Resource Finder V1.2 / PanSou bridge",
+  "generated_at": "2026-10-21T08:35:23+00:00",
+  "collector": "FAB Resource Finder V1.0",
   "count": 11,
   "records": [
     {
@@ -15,8 +15,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -30,8 +30,8 @@
       "category": "EHS环保安全",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -45,8 +45,8 @@
       "category": "半导体厂务综合",
       "doc_type": "设备手册",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -60,8 +60,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -75,8 +75,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -90,8 +90,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -105,8 +105,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -120,8 +120,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -135,8 +135,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-20T08:33:45+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "first_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -151,7 +151,7 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-20T06:41:15+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     },
     {
@@ -166,20 +166,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-20T06:41:15+00:00",
-      "last_seen": "2026-10-20T08:33:45+00:00",
+      "last_seen": "2026-10-21T08:35:23+00:00",
       "status": "待验证"
     }
-  ],
-  "discovery": {
-    "searched": 6,
-    "answered": 6,
-    "upstream_links": 1,
-    "upstream_hits": 1,
-    "qualified_candidates": 0,
-    "new_candidates": 0,
-    "searches_without_share_groups": 0,
-    "errors": [],
-    "link_status": "unverified",
-    "source": "all"
-  }
+  ]
 }
