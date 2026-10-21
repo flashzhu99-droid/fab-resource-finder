@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T08:33:45+00:00",
-  "collector": "FAB Resource Finder V1.0",
+  "generated_at": "2026-10-21T06:38:07+00:00",
+  "collector": "FAB Resource Finder V1.2 / PanSou bridge",
   "count": 11,
   "records": [
     {
@@ -169,5 +169,17 @@
       "last_seen": "2026-10-20T08:33:45+00:00",
       "status": "待验证"
     }
-  ]
+  ],
+  "discovery": {
+    "searched": 6,
+    "answered": 6,
+    "upstream_links": 1,
+    "upstream_hits": 1,
+    "qualified_candidates": 0,
+    "new_candidates": 0,
+    "searches_without_share_groups": 0,
+    "errors": [],
+    "link_status": "unverified",
+    "source": "all"
+  }
 }
