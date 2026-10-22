@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T06:38:56+00:00",
-  "collector": "FAB Resource Finder V1.2 / PanSou bridge",
+  "generated_at": "2026-10-22T08:37:36+00:00",
+  "collector": "FAB Resource Finder V1.0",
   "count": 78,
   "records": [
     {
@@ -15,8 +15,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -30,8 +30,8 @@
       "category": "EHS环保安全",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -45,8 +45,8 @@
       "category": "半导体厂务综合",
       "doc_type": "设备手册",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -60,8 +60,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -75,8 +75,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -90,8 +90,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -105,8 +105,8 @@
       "category": "GDS特气",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -120,8 +120,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -135,8 +135,8 @@
       "category": "半导体厂务综合",
       "doc_type": "其他资料",
       "origin": "人工授权清单",
-      "first_seen": "2026-10-21T08:35:23+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "first_seen": "2026-10-22T08:37:36+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -151,7 +151,7 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-20T06:41:15+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -166,7 +166,7 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-20T06:41:15+00:00",
-      "last_seen": "2026-10-21T08:35:23+00:00",
+      "last_seen": "2026-10-22T08:37:36+00:00",
       "status": "待验证"
     },
     {
@@ -181,10 +181,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:pansearch"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "05fd2dd05687cbf829e23ced",
@@ -198,10 +196,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:pansearch"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "4a3a28b83bcab97679537b80",
@@ -215,10 +211,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:xiaozhang"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "00fce2f6b7d72e083561fbce",
@@ -232,10 +226,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:xiaozhang"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "08308f7c082350dcd5faacfd",
@@ -249,10 +241,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "571660e6587a41d6118848d6",
@@ -266,10 +256,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "d6b16e866cefe32fab02e2bb",
@@ -283,10 +271,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "b89fb4ad3b1b3b826b35d068",
@@ -300,10 +286,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "4d4b1582e02974787ecc811c",
@@ -317,10 +301,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "52b82c1dd7bef57577e98ac6",
@@ -334,10 +316,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "104f74acf16156fba7baf01c",
@@ -351,10 +331,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "d1e04cf4132e26821fb96ca9",
@@ -368,10 +346,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "c9841b1a23ca6f1064471435",
@@ -385,10 +361,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "4284e5b2865402a0ed8505d4",
@@ -402,10 +376,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "ff91b24b979f7bf6999383c5",
@@ -419,10 +391,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "b4871640b397397d46f2fc46",
@@ -436,10 +406,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "5181bf209026523a40f3a1f7",
@@ -453,10 +421,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "e47f7f60db0da6f711b52463",
@@ -470,10 +436,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "78d1cb0e1dba03d6b17fe1bd",
@@ -487,10 +451,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "b4df725ef2622d844883eb05",
@@ -504,10 +466,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "f5229dd099afcd88390e7ed4",
@@ -521,10 +481,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "3b8b58450882cc9c3844b3fa",
@@ -538,10 +496,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "c4efe012b5b1030f47fffd50",
@@ -555,10 +511,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "7d744c0ad9aee9db4f083ac7",
@@ -572,10 +526,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "a48a09145120384b4ec09ec3",
@@ -589,10 +541,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "b05f081897f5d35988b43a6a",
@@ -606,10 +556,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "56440ee2b0efd940066afd26",
@@ -623,10 +571,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "0663c854df7d6a37768f76df",
@@ -640,10 +586,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "cf98604f8b0f6eecb92d6261",
@@ -657,10 +601,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "ec5d0bda848aed51c64c9b75",
@@ -674,10 +616,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "be8d329453f7faf3f0df7a22",
@@ -691,10 +631,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "c87aa9f224ec567b55d7abea",
@@ -708,10 +646,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:melost"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "850fe18177fef3a57d733741",
@@ -725,10 +661,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "49fbd4f87b3b0332a7545387",
@@ -742,10 +676,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "e61749243019a35d640c8590",
@@ -759,10 +691,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "dc140838ac50e4077700f1f2",
@@ -776,10 +706,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "463316785cff45dd457df5de",
@@ -793,10 +721,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:youxigs"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "0b97f30a6c7b393b44236f6b",
@@ -810,10 +736,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:youxigs"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "ccb608226b63787fd25a2fcb",
@@ -827,10 +751,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "62864cbe54010133c1d6c681",
@@ -844,10 +766,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "65d9482a5b80276a2f7a002f",
@@ -861,10 +781,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "7ae07372b1b24a3e865108d3",
@@ -878,10 +796,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "4d8e7873e7b85b9df7c33513",
@@ -895,10 +811,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "fb6eadc752f7c347c0563a6a",
@@ -912,10 +826,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "0dfe856f0adad4dc67bf0ec2",
@@ -929,10 +841,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "c3b8a76cbb776122fa6f343b",
@@ -946,10 +856,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "74f9ece63d5c0b9e1c01cbc3",
@@ -963,10 +871,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "1ee9395bd2fead185c184d07",
@@ -980,10 +886,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "c47310b53a06943d3e51a113",
@@ -997,10 +901,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "10ef9712376c0ea858703580",
@@ -1014,10 +916,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "094ab0cbab0e393fe8175f1e",
@@ -1031,10 +931,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "f10b9ac963f3e783363ccf8e",
@@ -1048,10 +946,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "458e76efb7660a468f3ee668",
@@ -1065,10 +961,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "8cc5ef1b17afaac276039782",
@@ -1082,10 +976,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:tgbokee"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "98cb494b0b1892c54b1204a0",
@@ -1099,10 +991,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "8e0245906a520b9f61ff1ca7",
@@ -1116,10 +1006,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "tg:xuexiziliaobaibaoku"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "516f97929021ca08fabe3f67",
@@ -1133,10 +1021,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "7a3c01db1853e5e892b6f40a",
@@ -1150,10 +1036,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "37350d697b0b086d67d26b5f",
@@ -1167,10 +1051,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:hunhepan"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "06d512d86301346053e5e449",
@@ -1184,10 +1066,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "3d2651988c5bd50afa8ab531",
@@ -1201,10 +1081,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "cb2f5188a0e768f91ce58571",
@@ -1218,10 +1096,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "284bb12abecd292b36272190",
@@ -1235,10 +1111,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:pansearch"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "874afbe12a661433e15d3ea7",
@@ -1252,10 +1126,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:hunhepan"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "7809da519b33bef9a468b26a",
@@ -1269,10 +1141,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "92f53b6ac7959aaf95e144a9",
@@ -1286,10 +1156,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     },
     {
       "id": "9f8082cf10cd7469ac041371",
@@ -1303,22 +1171,8 @@
       "doc_type": "其他资料",
       "origin": "PanSou公开资源候选",
       "first_seen": "2026-10-22T06:38:55+00:00",
-      "last_seen": "2026-10-22T06:38:55+00:00",
-      "status": "待验证",
-      "search_keyword": "EDI",
-      "search_source": "plugin:yunso"
+      "last_seen": "2026-10-22T08:37:36+00:00",
+      "status": "待验证"
     }
-  ],
-  "discovery": {
-    "searched": 6,
-    "answered": 6,
-    "upstream_links": 174,
-    "upstream_hits": 174,
-    "qualified_candidates": 67,
-    "new_candidates": 67,
-    "searches_without_share_groups": 0,
-    "errors": [],
-    "link_status": "unverified",
-    "source": "all"
-  }
+  ]
 }
