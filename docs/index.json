@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31T09:39:57+00:00",
-  "collector": "FAB Resource Finder V1.0",
-  "count": 78,
+  "generated_at": "2026-11-01T08:13:04+00:00",
+  "collector": "FAB Resource Finder V1.2 / PanSou bridge",
+  "count": 79,
   "records": [
     {
       "id": "e556a4d197b701af929f847c",
@@ -1173,6 +1173,35 @@
       "first_seen": "2026-10-22T06:38:55+00:00",
       "last_seen": "2026-10-31T09:39:57+00:00",
       "status": "待验证"
+    },
+    {
+      "id": "6de7e5ee19d683bb377f9f6c",
+      "share_url": "https://pan.quark.cn/s/bfb47976f79a",
+      "provider": "夸克网盘",
+      "title": "《绝密飞行（2005）》人工智能战机EDI的自我觉醒，与人类飞行员并肩作战，空战场面惊险刺激，引发科技伦理思考。#人工智能 #空战 #绝密飞行 #科幻动作 #爱奇艺2025-08-27 00:17:14",
+      "description": "公开来源：plugin:xiaokupan；搜索词：EDI。结果未经有效性或版权复核。",
+      "source_url": "",
+      "extraction_code": "",
+      "category": "UPW超纯水",
+      "doc_type": "其他资料",
+      "origin": "PanSou公开资源候选",
+      "first_seen": "2026-11-01T08:12:45+00:00",
+      "last_seen": "2026-11-01T08:12:45+00:00",
+      "status": "待验证",
+      "search_keyword": "EDI",
+      "search_source": "plugin:xiaokupan"
     }
-  ]
+  ],
+  "discovery": {
+    "searched": 6,
+    "answered": 6,
+    "upstream_links": 185,
+    "upstream_hits": 185,
+    "qualified_candidates": 67,
+    "new_candidates": 1,
+    "searches_without_share_groups": 0,
+    "errors": [],
+    "link_status": "unverified",
+    "source": "all"
+  }
 }
